@@ -1,0 +1,20 @@
+class circle:
+    """ it uses two method getarea and get circumfrence"""
+    def __init__(self,radius):
+        self.radius = radius
+
+    def getarea(self):
+        print("area of circle is {}".format(3.14*self.radius*self.radius))
+
+    def getcircumfrence(self):
+        print("circumfrence of circle is {}".format(2*3.14 * self.radius ))
+
+
+radius=float(input("enter the radius of circle"))
+c1 = circle(radius)
+c1.getarea()
+c1.getcircumfrence()
+output:
+enter the radius of circle3
+area of circle is 28.259999999999998
+circumfrence of circle is 18.84

@@ -1,0 +1,42 @@
+class student:
+    """it displays the student info and and updates it for student 3 """
+    age = 15
+    marks = 50
+
+    def __init__(self, name, rno):
+        self.name = name
+        self.rno = rno
+
+    def display(self):
+        print('Name: {}, RollNo: {} '. \
+              format(self.name, self.rno), end=' ')
+        print('Age:', self.age)
+        print('Marks:', self.marks)
+    def setAge(self, age):
+        self.age = age
+
+    def setMarks(self, marks):
+        self.marks = marks
+
+
+s1 = student('anie', 1)
+
+s1.display()
+
+s2 = student('apoo', 2)
+
+s2.display()
+
+s3 = student('kumari', 3)
+s3.setAge(21)
+s3.setMarks(99)
+
+s3.display()
+
+output:
+Name: anie, RollNo: 1  Age: 15
+Marks: 50
+Name: apoo, RollNo: 2  Age: 15
+Marks: 50
+Name: kumari, RollNo: 3  Age: 21
+Marks: 99

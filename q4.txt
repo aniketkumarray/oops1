@@ -1,0 +1,31 @@
+class MovieDetails:
+    def __init__(self, mName, artist, yof, ratings):
+        self.mName = mName
+        self.artist = artist
+        self.yof = yof
+        self.ratings = ratings
+
+    def display(self):
+        print(' Movie Name: {}, Artist Name: {}, Year of Release: {}, Ratings:{}' \
+              .format(self.mName, self.artist,self.yof, self.ratings))
+
+    def setearning(self, earn):
+        self.earning = earn
+        print(' Movie Name: {}, Artist Name: {}, Year of Release: {}, Ratings:{}' \
+              .format(self.mName, self.artist, self.yof, self.ratings), end=" ")
+        print("Earning of movie is {}".format(self.earning))
+
+
+s1 = MovieDetails('Don', 'S.R.K', 2012, 5)
+
+s1.display()
+
+s2 = MovieDetails('Titanic', 'Kate Winslet', 1997, 5)
+
+s2.display()
+s2.setearning(300000)
+
+output:
+ Movie Name: Don, Artist Name: S.R.K, Year of Release: 2012, Ratings:5
+ Movie Name: Titanic, Artist Name: Kate Winslet, Year of Release: 1997, Ratings:5
+ Movie Name: Titanic, Artist Name: Kate Winslet, Year of Release: 1997, Ratings:5 Earning of movie is 300000
